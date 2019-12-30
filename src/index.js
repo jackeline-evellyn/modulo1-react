@@ -24,22 +24,29 @@ static protoTypes = {
 class App extends Component {
 
 state = {
-    counter: 0,
+    counter: 0
 };
 
 handleClick = () => {
     // sobrepondo o valor do conter 
     // React nao aceita alterar o estado
-    this.setState({counter: this.state.counter + 1 });
-};
+    this.setState({counter: this.state.counter + 1 }, () => {
+        //console.log(this.state.counter);
+    });
+
+    // Quando precisa realizar a alteração da mesma informaçao em sequencia
+    // this.setState(state => ({counter: state.counter + 1}));
+    // this.setState(state => ({counter: state.counter + 1}));
+    };
 
     render() {
+
         return (
    // Após o return precisa de um tag html por volta
         <Fragment>
             {/* Fragment funciona da mesma forma sem ultilizar pré formatação */}
             <h1>Hello Rocketseat</h1>
-            <h2>{this.state.couter}</h2>
+            <h2>{this.state.counter}</h2>
             {/* Chama o component Button dentro do Component App */}
             <Button onClick={this.handleClick}>Somar</Button>
             
