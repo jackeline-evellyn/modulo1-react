@@ -8,7 +8,23 @@ class App extends Component {
         counter: 0
     };
 
-handleClick = () => {
+    componentDidMount(){
+
+    }
+
+    shouldComponentUpdate(nextProps,nextState){
+        return nextState.counter <= 10;
+    }
+
+    componentWillUnmount(){
+
+    }
+    
+    componentWillMount(){
+
+    }
+
+    handleClick = () => {
     // sobrepondo o valor do conter 
     // React nao aceita alterar o estado
     this.setState({counter: this.state.counter + 1 }, () => {
