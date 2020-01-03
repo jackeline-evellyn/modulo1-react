@@ -3,26 +3,12 @@ import {render} from 'react-dom';
 
 import Button from './Button';
 
+import './style.css';
+
 class App extends Component {
     state = {
         counter: 0
     };
-
-    componentDidMount(){
-
-    }
-
-    shouldComponentUpdate(nextProps,nextState){
-        return nextState.counter <= 10;
-    }
-
-    componentWillUnmount(){
-
-    }
-    
-    componentWillMount(){
-
-    }
 
     handleClick = () => {
     // sobrepondo o valor do conter 

@@ -1,0 +1,28 @@
+Métodos de ciclo de vida de um componente
+
+O que são: métodos que executam automaticamente baseados na inicialização, atualização e remoção de um objeto.
+
+-> ComponentDidMount: Executa automaticamente na inicialização do componente
+ 
+    componentDidMount(){
+
+    }
+
+-> componentWillMount: Faz algo depois que o componente deixa de existir
+    componentWillMount(){
+
+    }
+
+-> shouldComponentUpdate: Pode vetar atualizações 
+
+    shouldComponentUpdate(nextProps, nextState){
+        return nextState.counter <= 10;
+    }
+
+-> componentWillUnmount: Executa depois da atualização
+
+    componentWillUnmount(prevProps, prevState){
+
+    }
+
+    
