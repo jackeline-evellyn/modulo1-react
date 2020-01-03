@@ -1,31 +1,12 @@
 import React, {Component, Fragment} from 'react';
-import PropTypes from 'prop-types';
 import {render} from 'react-dom';
 
-class Button extends Component {
-    
-static defaultProps = {
-    children: 'Salvar',
-};
-
-static protoTypes = {
-    onClick: PropTypes.func.isRequired,
-    children: PropTypes.string,
-};
-
-    render(){
-        return <button onClick={this.props.onClick}>
-                    {this.props.children}
-                 </button>
-    }
-}
-
+import Button from './Button';
 
 class App extends Component {
-
-state = {
-    counter: 0
-};
+    state = {
+        counter: 0
+    };
 
 handleClick = () => {
     // sobrepondo o valor do conter 
