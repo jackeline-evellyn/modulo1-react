@@ -1,0 +1,22 @@
+root = true;
+# mostra que é o editor config principal
+
+[+]
+# As configurações abaixo valeram para todo tipo de arquivo
+
+indent_style = space
+# Identação feita por space, não ultilizará tabs
+
+indent_size = 1
+# Dois espaços
+
+end_of_line = lf
+# Um único de estilo de quebra de linha
+
+charset = utf-8
+
+trim_trailing_whitespace = true
+# quando deixar alguns espaços no final da linha e salvar irá tirar
+
+insert_final_newline = true
+# deixa uma linha em branco no final do arquivo

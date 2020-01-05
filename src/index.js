@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 
 import Button from './Button';
 
-import './style.css';
+import './style.scss';
 
 class App extends Component {
     state = {
