@@ -7,7 +7,7 @@ import './style.scss';
 
 class App extends Component {
     state = {
-        counter: 0
+        counter: 0,
     };
 
     handleClick = () => {
